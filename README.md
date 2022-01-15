@@ -2,4 +2,8 @@
 
 This is a basic game to practice logic and javascript skills.
 
-:+1: You are welcome to submit your pull request. (To practica that too :sweat_smile: )
+## Quick Note
+
+:+1: **You are welcome to submit your pull request. (To practica that too** :sweat_smile: )
+
+This is part of a course at [platzi](https://platzi.com/clases/basico-javascript/) :green_heart:
