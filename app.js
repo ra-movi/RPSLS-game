@@ -1,9 +1,9 @@
 /*
-Name: Basic rock paper scissors game
-Version: 0.1
+Name: Basic Rock Paper Scissors Lizard Spock game
+Version: 0.2
 */
-var options = ["rock", "paper", "scissors"];
-var promptText = "Choose: 0: Rock, 1:Paper, 2: Scissors: ";
+var options = ["rock", "paper", "scissors", "lizard", "spock"];
+var promptText = "Choose: 0: Rock, 1:Paper, 2:Scissors, 3:Lizard, 4:Spock -> ";
 
 runLogic(prompt(promptText));
 
@@ -21,34 +21,75 @@ function runLogic(user_choise) {
   user_choise = Number(user_choise);
 
   /* Logic of the game */
-  //rock beats scissors
+  //(and as it always has) Rock crushes Scissors
   if ((cpuPick == "rock") & (options[user_choise] == "scissors")) {
     console.log(
       `Cpu: ${cpuPick} || You: ${options[user_choise]} \n Result: Bender Win's`
     );
-  } else if ((cpuPick == "scissors") & (options[user_choise] == "rock")) {
-    console.log(
-      `Cpu: ${cpuPick} || You: ${options[user_choise]} \n Result: You Win`
-    );
   }
 
-  //scissors beats paper
-  if ((cpuPick == "scissors") & (options[user_choise] == "paper")) {
+  //Scissors cuts Paper
+  else if ((cpuPick == "scissors") & (options[user_choise] == "paper")) {
     console.log(
       `Cpu: ${cpuPick} || You: ${options[user_choise]} \n Result: Bender Win's`
     );
-  } else if ((cpuPick == "paper") & (options[user_choise] == "scissors")) {
-    console.log(
-      `Cpu: ${cpuPick} || You: ${options[user_choise]} \n Result: You Win`
-    );
   }
 
-  //paper beats rock
-  if ((cpuPick == "paper") & (options[user_choise] == "rock")) {
+  //Paper covers Rock
+  else if ((cpuPick == "paper") & (options[user_choise] == "rock")) {
     console.log(
       `Cpu: ${cpuPick} || You: ${options[user_choise]} \n Result: Bender Win's`
     );
-  } else if ((cpuPick == "rock") & (options[user_choise] == "paper")) {
+  }
+
+  // Rock crushes Lizard
+  else if ((cpuPick == "rock") & (options[user_choise] == "lizard")) {
+    console.log(
+      `Cpu: ${cpuPick} || You: ${options[user_choise]} \n Result: Bender Win's`
+    );
+  }
+
+  // Lizard poisons Spock
+  else if ((cpuPick == "lizard") & (options[user_choise] == "spock")) {
+    console.log(
+      `Cpu: ${cpuPick} || You: ${options[user_choise]} \n Result: Bender Win's`
+    );
+  }
+
+  // Spock smashes Scissors
+  else if ((cpuPick == "spock") & (options[user_choise] == "scissors")) {
+    console.log(
+      `Cpu: ${cpuPick} || You: ${options[user_choise]} \n Result: Bender Win's`
+    );
+  }
+
+  // Scissors decapitates Lizard
+  else if ((cpuPick == "scissors") & (options[user_choise] == "lizard")) {
+    console.log(
+      `Cpu: ${cpuPick} || You: ${options[user_choise]} \n Result: Bender Win's`
+    );
+  }
+
+  // Lizard eats Paper
+  else if ((cpuPick == "lizard") & (options[user_choise] == "paper")) {
+    console.log(
+      `Cpu: ${cpuPick} || You: ${options[user_choise]} \n Result: Bender Win's`
+    );
+  }
+
+  // Paper disproves Spock
+  else if ((cpuPick == "paper") & (options[user_choise] == "spock")) {
+    console.log(
+      `Cpu: ${cpuPick} || You: ${options[user_choise]} \n Result: Bender Win's`
+    );
+  }
+
+  // Spock vaporizes Rock
+  else if ((cpuPick == "spock") & (options[user_choise] == "rock")) {
+    console.log(
+      `Cpu: ${cpuPick} || You: ${options[user_choise]} \n Result: Bender Win's`
+    );
+  } else {
     console.log(
       `Cpu: ${cpuPick} || You: ${options[user_choise]} \n Result: You Win`
     );
