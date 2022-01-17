@@ -9,3 +9,11 @@ main {
 main picture img {
   width: 100%;
 }
+
+main .results {
+  border: solid black 1px;
+  margin: 0.5rem;
+  padding: 0.8rem;
+  min-height: 40px;
+  box-sizing: border-box;
+}
